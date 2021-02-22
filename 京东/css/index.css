@@ -1,0 +1,261 @@
+/*网页中间部分css样式*/
+.grid{
+	height: 480px;
+	/*background-color: pink;*/
+}
+
+.grid_col1{
+	width: 190px;
+	height: 100%;
+	background-color: #6E6568;
+	font-size: 16px;
+	color: #fff;
+	position: relative;
+}
+.ad{
+	width: 250px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left: -250px;
+}
+.ad-r{
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	width: 0;
+	height: 480px;
+	transition: all 1s;
+	background: url(../images/ad-r.jpg) no-repeat;
+}
+.ad:hover .ad-r{
+	width: 990px;
+}
+.grid_col1 a{
+	font-size: 16px;
+	color: #fff;
+}
+.grid_col1 a:hover{
+	color: #F10215;
+}
+.grid_col1 ul{
+	padding: 10px 0;
+}
+.grid_col1 ul li{
+	padding-left: 12px;
+	height: 29px;
+	line-height: 26px;
+}
+.grid_col1 ul li:hover{
+	background-color: #9C9698;
+}
+.grid_col2{
+	width: 790px;
+	height: 100%;
+	/*background-color: slateblue;*/
+	margin-left: 10px;
+}
+.grid_col2_top{
+	position: relative;
+}
+.grid_col2_topImg{
+	width: 790px;
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.grid_col2_topImg ul{
+	position: absolute;
+	width: 5000px;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+.grid_col2_topImg li{
+	float: left;
+	width: 790px;
+	height: 340px;
+}
+.arrow_l,
+.arrow_r{
+ 	width: 30px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background-color: rgba(0,0,0,.3);
+	transform: translateY(-50%);
+	font-size: 20px;
+	text-align: center;
+	line-height: 60px;
+	color: rgba(255,255,255,.6);
+	/*background: */
+}
+.arrow_r{
+	left: 760px;
+}
+.grid_col2_boottom {
+	margin-top: 10px;
+}
+.circe{
+	height: 20px;
+	background: rgba(255,255,255,.3);
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	padding-left: 6px;
+	box-sizing: border-box;
+}
+.circe li{
+	float: left;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 4px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.circe .cur{
+	background-color: #F10215;
+}
+.grid_col3{
+	width: 190px;
+	height: 100%;
+	background-color: deepskyblue;
+}
+.login{
+	height: 85px;
+	border-bottom: 1px solid #ccc;
+	background-color: white;
+	padding: 15px;
+	/*box-sizing: border-box;*/
+}
+.login-t{
+	width: 95px;
+	height: 60px;
+	font-size: 12px;
+	white-space: nowrap;/*强制一行显示*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666;
+	line-height: 20px;
+	padding-left: 60px;
+	position: relative;
+}
+.login-t a{
+	color: #666;
+}
+.login-t a:hover{
+	color: #F10215;
+}
+.usre-info{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	top:0;
+	background: url(../images/sprite_userinfo@1x.png) no-repeat -70px 0;
+}
+.usre-info img{
+	width: 40px;
+	border-radius: 50%;
+	margin: 5px;
+}
+.login-b a{
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	border: 2px solid #F10215;
+	margin-right: 3px;
+	line-height: 20px;
+	text-align: center;
+	color: #F10215;
+}
+.login-b a:hover{
+	background-color: #F10215;
+	color: #fff;
+}
+.news{
+	height: 147px;
+	border-bottom: 1px solid #ccc;
+	background-color: white;
+	padding: 7px 13px 0;
+	/*box-sizing: border-box;*/
+}
+.news-t{
+	height: 19px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.news-t div{
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 28px;
+	height: 2px;
+	background-color: #F10215;
+}
+.news-t a{
+	float: left;
+	height: 17px;
+	line-height: 17px;
+}
+.news-t .cuxiao{
+	width: 38px;
+	border-right: 1px solid #ccc;	
+}
+.news-t a:nth-child(2){
+	margin-left: 15px;
+}
+.news-t a:nth-child(3){
+	float: right;
+}
+.news-b{
+	padding-top: 15px;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+.news-b li{
+	height: 23px;
+	line-break: 23px;
+}
+.expand{
+	height: 209px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.expand ul{
+	width: 195px;
+}
+.expand li{
+	width: 47px;
+	height: 69px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+.expand li a{
+	padding-top: 15px;
+	display: block;
+	text-align: center;
+}
+.expand li i{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: url(../images/sprite_fs@1x.png) no-repeat;
+	width: 18px;
+	height: 23px;
+	background-position: -5px -88px;
+}
+
